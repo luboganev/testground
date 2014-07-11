@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BlogPostsPlayground</string>
+    <string name="main_activity_title">Hello to the blog posts playground. Please choose related post demo.</string>
+    <string name="title_activity_localbroadcast">Local broadcast demo</string>
+    <string name="title_activity_headlessfragment">Headless fragment</string>
+    <string name="title_activity_awsum">AwsumActivity</string>
+    <string name="main_button_intent_builder">Start Activity through the Intent Builder</string>
+    <string name="main_button_broadcastdemo">Local broadcast demo</string>
+    <string name="main_button_headlessfragmentdemo">Headless fragment demo</string>
+
+</resources>
