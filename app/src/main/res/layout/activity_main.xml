@@ -40,4 +40,12 @@
         android:layout_marginTop="8dp"
         android:text="@string/main_button_headlessfragmentdemo" />
 
+    <Button
+        android:id="@+id/btn_demoImageScaleType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:text="@string/main_button_imagescaledemo" />
+
 </LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_scaleType_demo_images">
+        <item>@drawable/img_scaletype_demo_landscape</item>
+        <item>@drawable/img_scaletype_demo_portrait</item>
+        <item>@drawable/img_scaletype_demo_square</item>
+        <item>@drawable/img_scaletype_demo_landscape_small</item>
+        <item>@drawable/img_scaletype_demo_portrait_small</item>
+        <item>@drawable/img_scaletype_demo_square_small</item>
+    </array>
+    <string-array name="array_scaleType_demo_images_labels">
+        <item>Landscape (BIG)</item>
+        <item>Portrait (BIG)</item>
+        <item>Square (BIG)</item>
+        <item>Landscape (SMALL)</item>
+        <item>Portrait (SMALL)</item>
+        <item>Square (SMALL)</item>
+    </string-array>
+    <string-array name="array_scaleType_demo_scaleTypes_labels">
+        <item>MATRIX</item>
+        <item>FIT_XY</item>
+        <item>FIT_START</item>
+        <item>FIT_CENTER</item>
+        <item>FIT_END</item>
+        <item>CENTER</item>
+        <item>CENTER_CROP</item>
+        <item>CENTER_INSIDE</item>
+    </string-array>
+</resources>

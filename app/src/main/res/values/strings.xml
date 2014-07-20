@@ -9,5 +9,9 @@
     <string name="main_button_intent_builder">Start Activity through the Intent Builder</string>
     <string name="main_button_broadcastdemo">Local broadcast demo</string>
     <string name="main_button_headlessfragmentdemo">Headless fragment demo</string>
+    <string name="title_activity_image_scale_demo">ImageScaleDemoActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="main_button_imagescaledemo">ImageView ScaleType Demo</string>
 
 </resources>

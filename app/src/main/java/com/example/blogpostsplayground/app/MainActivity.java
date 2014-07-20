@@ -40,5 +40,12 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, HeadlessFragmentDemoActivity.class));
             }
         });
+
+        findViewById(R.id.btn_demoImageScaleType).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ImageScaleDemoActivity.class));
+            }
+        });
     }
 }
