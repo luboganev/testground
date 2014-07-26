@@ -3,13 +3,13 @@
     package="com.example.blogpostsplayground.app" >
 
     <application
-        android:name=".BlogPostsApplication"
+        android:name=".activities.BlogPostsApplication"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,21 +18,21 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".HeadlessFragmentDemoActivity"
+            android:name=".activities.HeadlessFragmentDemoActivity"
             android:label="@string/title_activity_headlessfragment" >
         </activity>
         <activity
-            android:name=".LocalBroadcastDemoActivity"
+            android:name=".activities.LocalBroadcastDemoActivity"
             android:label="@string/title_activity_localbroadcast" >
         </activity>
         <activity
-            android:name=".AwsumActivity"
+            android:name=".activities.AwsumActivity"
             android:label="@string/title_activity_awsum" >
         </activity>
         <activity
-            android:name=".ImageScaleDemoActivity"
+            android:name=".activities.ImageScaleDemoActivity"
             android:label="@string/title_activity_image_scale_demo"
-            android:parentActivityName=".MainActivity" >
+            android:parentActivityName=".activities.MainActivity" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.blogpostsplayground.app.MainActivity" />

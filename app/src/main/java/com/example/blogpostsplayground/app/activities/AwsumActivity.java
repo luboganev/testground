@@ -1,17 +1,12 @@
-package com.example.blogpostsplayground.app;
+package com.example.blogpostsplayground.app.activities;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.content.Intent;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
-import java.lang.ref.WeakReference;
+import com.example.blogpostsplayground.app.R;
 
 
 public class AwsumActivity extends Activity {
