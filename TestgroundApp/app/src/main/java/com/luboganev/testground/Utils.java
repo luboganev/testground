@@ -1,4 +1,4 @@
-package com.example.blogpostsplayground.app;
+package com.luboganev.testground;
 
 import android.content.Context;
 import android.util.TypedValue;

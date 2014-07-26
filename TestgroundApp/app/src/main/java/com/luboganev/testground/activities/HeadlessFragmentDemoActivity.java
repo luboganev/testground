@@ -1,16 +1,14 @@
-package com.example.blogpostsplayground.app.activities;
+package com.luboganev.testground.activities;
 
 import android.app.Activity;
 import android.app.Fragment;
-import android.content.Context;
-import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.blogpostsplayground.app.R;
+import com.luboganev.testground.R;
 
 import java.lang.ref.WeakReference;
 

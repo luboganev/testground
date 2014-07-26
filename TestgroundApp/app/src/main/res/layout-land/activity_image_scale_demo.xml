@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.blogpostsplayground.app.activities.ImageScaleDemoActivity">
+    tools:context="com.luboganev.testground.app.activities.ImageScaleDemoActivity">
 
 
     <include layout="@layout/image_scale_demo_controllers" />

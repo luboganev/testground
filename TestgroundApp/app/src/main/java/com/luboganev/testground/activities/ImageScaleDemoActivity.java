@@ -1,4 +1,4 @@
-package com.example.blogpostsplayground.app.activities;
+package com.luboganev.testground.activities;
 
 import android.app.Activity;
 import android.content.res.TypedArray;
@@ -13,8 +13,8 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.example.blogpostsplayground.app.R;
-import com.example.blogpostsplayground.app.Utils;
+import com.luboganev.testground.R;
+import com.luboganev.testground.Utils;
 
 public class ImageScaleDemoActivity extends Activity {
 

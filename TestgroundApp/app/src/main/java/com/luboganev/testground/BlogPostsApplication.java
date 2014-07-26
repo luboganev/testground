@@ -1,4 +1,4 @@
-package com.example.blogpostsplayground.app.activities;
+package com.luboganev.testground;
 
 import android.app.Application;
 import android.content.Context;

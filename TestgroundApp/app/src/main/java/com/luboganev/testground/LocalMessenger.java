@@ -1,4 +1,4 @@
-package com.example.blogpostsplayground.app;
+package com.luboganev.testground;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

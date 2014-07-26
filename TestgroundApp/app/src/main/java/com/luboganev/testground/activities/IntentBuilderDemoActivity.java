@@ -1,4 +1,4 @@
-package com.example.blogpostsplayground.app.activities;
+package com.luboganev.testground.activities;
 
 import android.app.Activity;
 import android.content.Context;
@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.example.blogpostsplayground.app.R;
+import com.luboganev.testground.R;
 
 
 public class IntentBuilderDemoActivity extends Activity {

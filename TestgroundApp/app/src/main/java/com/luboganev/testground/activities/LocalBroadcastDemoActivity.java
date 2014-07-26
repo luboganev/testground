@@ -1,12 +1,12 @@
-package com.example.blogpostsplayground.app.activities;
+package com.luboganev.testground.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.example.blogpostsplayground.app.LocalMessenger;
-import com.example.blogpostsplayground.app.R;
+import com.luboganev.testground.LocalMessenger;
+import com.luboganev.testground.R;
 
 
 public class LocalBroadcastDemoActivity extends Activity implements LocalMessenger.OnReceiveBroadcastListener {

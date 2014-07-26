@@ -1,4 +1,4 @@
-package com.example.blogpostsplayground.app.activities;
+package com.luboganev.testground.activities;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -6,7 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
-import com.example.blogpostsplayground.app.R;
+import com.luboganev.testground.R;
 
 
 public class MainActivity extends Activity {
