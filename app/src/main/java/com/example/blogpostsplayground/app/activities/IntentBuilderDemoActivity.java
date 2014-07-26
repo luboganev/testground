@@ -9,7 +9,7 @@ import android.text.TextUtils;
 import com.example.blogpostsplayground.app.R;
 
 
-public class AwsumActivity extends Activity {
+public class IntentBuilderDemoActivity extends Activity {
     private static String INTENT_EXTRA_TITLE = "title";
     private static String INTENT_EXTRA_PAGE_NUMBER = "page_number";
 
@@ -36,7 +36,7 @@ public class AwsumActivity extends Activity {
         }
 
         public Intent build(Context ctx) {
-            Intent i = new Intent(ctx, AwsumActivity.class);
+            Intent i = new Intent(ctx, IntentBuilderDemoActivity.class);
             i.putExtras(mExtras);
             return i;
         }
@@ -58,7 +58,7 @@ public class AwsumActivity extends Activity {
         }
 
         if(TextUtils.isEmpty(title)) {
-            setTitle(getResources().getString(R.string.title_activity_awsum));
+            setTitle(getResources().getString(R.string.title_activity_intentbuilder));
         } else {
             setTitle(title);
         }

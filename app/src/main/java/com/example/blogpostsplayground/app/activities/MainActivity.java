@@ -2,6 +2,7 @@ package com.example.blogpostsplayground.app.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 
@@ -18,7 +19,7 @@ public class MainActivity extends Activity {
         findViewById(R.id.btn_demoIntentBuilder).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(AwsumActivity.AwsumIntentBuilder.getBuilder()
+                startActivity(IntentBuilderDemoActivity.AwsumIntentBuilder.getBuilder()
                         .withTitle("test")
                         .withPageNumber(1337)
                         .build(MainActivity.this));
@@ -46,5 +47,11 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, ImageScaleDemoActivity.class));
             }
         });
+    }
+
+    public void openRelatedPost(View v) {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse((String)v.getTag()));
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 }

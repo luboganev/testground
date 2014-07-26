@@ -18,39 +18,119 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/main_activity_title"
-            android:textAppearance="?android:textAppearanceLarge" />
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceMedium" />
 
-        <Button
-            android:id="@+id/btn_demoIntentBuilder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
             android:layout_marginTop="8dp"
-            android:text="@string/main_button_intent_builder" />
+            android:layout_marginBottom="8dp"
+            android:background="#4D000000" />
 
-        <Button
-            android:id="@+id/btn_demoLocalBroadcastsCenter"
-            android:layout_width="wrap_content"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:text="@string/main_button_broadcastdemo" />
+            android:stretchColumns="0">
 
-        <Button
-            android:id="@+id/btn_demoHeadlessFragment"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:text="@string/main_button_headlessfragmentdemo" />
+            <TableRow>
 
-        <Button
-            android:id="@+id/btn_demoImageScaleType"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="8dp"
-            android:text="@string/main_button_imagescaledemo" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Run demo"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Open post"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textStyle="bold|italic" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_demoIntentBuilder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/main_button_intent_builder" />
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="?android:selectableItemBackground"
+                    android:onClick="openRelatedPost"
+                    android:src="@drawable/ic_action_open_post"
+                    android:tag="http://luboganev.github.io/blog/activity-intents-builder/" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_demoLocalBroadcastsCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/main_button_broadcastdemo" />
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="?android:selectableItemBackground"
+                    android:onClick="openRelatedPost"
+                    android:src="@drawable/ic_action_open_post"
+                    android:tag="http://luboganev.github.io/blog/messaging-with-localbroadcastmanager/" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_demoHeadlessFragment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/main_button_headlessfragmentdemo" />
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="?android:selectableItemBackground"
+                    android:onClick="openRelatedPost"
+                    android:src="@drawable/ic_action_open_post"
+                    android:tag="http://luboganev.github.io/blog/headless-fragments/" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_demoImageScaleType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/main_button_imagescaledemo" />
+
+                <ImageButton
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="?android:selectableItemBackground"
+                    android:onClick="openRelatedPost"
+                    android:src="@drawable/ic_action_open_post"
+                    android:tag="http://luboganev.github.io/blog/imageview-scale-types" />
+            </TableRow>
+
+        </TableLayout>
+
 
     </LinearLayout>
 </ScrollView>

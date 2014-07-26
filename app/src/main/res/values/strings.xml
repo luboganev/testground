@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">BlogPostsPlayground</string>
-    <string name="main_activity_title">Hello to the blog posts playground. Please choose related post demo.</string>
+    <string name="app_name">Testground</string>
+    <string name="main_activity_title">Wellcome to the blog posts testground. You can run a demo or open the related blog post.</string>
     <string name="title_activity_localbroadcast">Local broadcast demo</string>
-    <string name="title_activity_headlessfragment">Headless fragment</string>
-    <string name="title_activity_awsum">AwsumActivity</string>
-    <string name="main_button_intent_builder">Start Activity through the Intent Builder</string>
-    <string name="main_button_broadcastdemo">Local broadcast demo</string>
-    <string name="main_button_headlessfragmentdemo">Headless fragment demo</string>
-    <string name="title_activity_image_scale_demo">ImageScaleDemoActivity</string>
+    <string name="title_activity_headlessfragment">Headless fragment demo</string>
+    <string name="title_activity_intentbuilder">Intent builder demo</string>
+    <string name="title_activity_image_scale_demo">ImageView ScaleType demo</string>
+    <string name="main_button_intent_builder">Intent Builder</string>
+    <string name="main_button_broadcastdemo">Local broadcast</string>
+    <string name="main_button_headlessfragmentdemo">Headless fragment</string>
+    <string name="main_button_imagescaledemo">ImageView ScaleType</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
-    <string name="main_button_imagescaledemo">ImageView ScaleType Demo</string>
 
 </resources>

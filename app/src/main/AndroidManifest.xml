@@ -26,8 +26,8 @@
             android:label="@string/title_activity_localbroadcast" >
         </activity>
         <activity
-            android:name=".activities.AwsumActivity"
-            android:label="@string/title_activity_awsum" >
+            android:name=".activities.IntentBuilderDemoActivity"
+            android:label="@string/title_activity_intentbuilder" >
         </activity>
         <activity
             android:name=".activities.ImageScaleDemoActivity"
