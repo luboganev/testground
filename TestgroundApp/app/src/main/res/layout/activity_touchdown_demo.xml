@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/cb_steal_touch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Steal touch event away"/>
+
+    <TextView
+        android:id="@+id/touchdown_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:textAppearanceMedium"
+        android:text="Touchdown status"
+        android:layout_marginTop="4dp"/>
+
+    <com.luboganev.testground.views.TouchDownWrapper
+        android:id="@+id/untouchable_wrapper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80CCCCCC"
+        android:layout_marginTop="8dp"
+        android:padding="2dp"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btn_wrapped_untouchable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Click me"
+            android:layout_gravity="center"/>
+    </com.luboganev.testground.views.TouchDownWrapper>
+
+</LinearLayout>

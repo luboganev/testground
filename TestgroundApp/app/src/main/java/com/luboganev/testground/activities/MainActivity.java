@@ -47,6 +47,13 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, ImageScaleDemoActivity.class));
             }
         });
+
+        findViewById(R.id.btn_demoTouchdown).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, TouchDownDemoActivity.class));
+            }
+        });
     }
 
     public void openRelatedPost(View v) {
