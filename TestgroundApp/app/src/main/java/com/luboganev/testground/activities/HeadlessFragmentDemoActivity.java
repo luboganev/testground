@@ -127,7 +127,7 @@ public class HeadlessFragmentDemoActivity extends AppCompatActivity {
                     }
                 }
             }
-        };
+        }
     }
 
 }

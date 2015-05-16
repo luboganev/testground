@@ -106,7 +106,7 @@ public class LocalMessenger {
      *  to be invoked when broadcast is sent
      */
     public interface OnReceiveBroadcastListener {
-        public void onReceiveBroadcast(Bundle extras);
+        void onReceiveBroadcast(Bundle extras);
     }
 
     /**

@@ -8,10 +8,14 @@ android {
         applicationId "com.luboganev.testground"
         minSdkVersion 14
         targetSdkVersion 22
-        versionCode 3
+        versionCode 4
         versionName "1.0"
     }
     buildTypes {
+        debug {
+            applicationIdSuffix ".debug"
+            versionNameSuffix "-DEBUG"
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

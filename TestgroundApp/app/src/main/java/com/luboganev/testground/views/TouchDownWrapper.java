@@ -61,8 +61,8 @@ public class TouchDownWrapper extends FrameLayout {
         this.mTouchBlocking = touchBlocking;
     }
 
-    public static interface OnTouchDownStateChangedListener {
-        public void onTouchDownStateChanged(boolean isTouched);
+    public interface OnTouchDownStateChangedListener {
+        void onTouchDownStateChanged(boolean isTouched);
     }
 
 }

@@ -34,8 +34,6 @@ public class ImageScaleDemoActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_image_scale_demo);
 
-        getActionBar().hide();
-
         spImageSource = (Spinner) findViewById(R.id.sp_imageSource);
         spScaleType = (Spinner) findViewById(R.id.sp_scaleType);
         ivContainer = (ImageView) findViewById(R.id.iv_container);
