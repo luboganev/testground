@@ -1,9 +1,9 @@
 package com.luboganev.testground.activities;
 
-import android.app.Activity;
 import android.app.Fragment;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,22 +13,26 @@ import com.luboganev.testground.R;
 import java.lang.ref.WeakReference;
 
 
-public class HeadlessFragmentDemoActivity extends Activity {
+public class HeadlessFragmentDemoActivity extends AppCompatActivity {
+
+    private HeadlessCounterFragment mHeadlessCounterFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_headlessfragmentdemo);
 
-        HeadlessCounterFragment counterState = (HeadlessCounterFragment)getFragmentManager()
+        mHeadlessCounterFragment = (HeadlessCounterFragment)getFragmentManager()
                 .findFragmentByTag("counter_fragment");
-        if(counterState == null) {
-            counterState = new HeadlessCounterFragment();
-            getFragmentManager().beginTransaction().add(counterState, "counter_fragment").commit();
+        if(mHeadlessCounterFragment == null) {
+            mHeadlessCounterFragment = new HeadlessCounterFragment();
+            getFragmentManager().beginTransaction().add(mHeadlessCounterFragment, "counter_fragment").commit();
         }
 
-        if(savedInstanceState == null)
-            counterState.setCounterTextView((TextView)findViewById(R.id.textView));
+        if(savedInstanceState == null) {
+            // Setting the TextView for the count only initially
+            mHeadlessCounterFragment.setCounterTextView((TextView) findViewById(R.id.textView));
+        }
 
         findViewById(R.id.btn_startCounting).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +51,16 @@ public class HeadlessFragmentDemoActivity extends Activity {
                 if(counterState != null) counterState.stopCounting();
             }
         });
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        // Making sure we clean references on destroy
+        if(mHeadlessCounterFragment != null) {
+            mHeadlessCounterFragment.setCounterTextView(null);
+            mHeadlessCounterFragment = null;
+        }
     }
 
     public static class HeadlessCounterFragment extends Fragment {

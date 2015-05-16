@@ -4,12 +4,13 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 
 import com.luboganev.testground.R;
 
 
-public class IntentBuilderDemoActivity extends Activity {
+public class IntentBuilderDemoActivity extends AppCompatActivity {
     private static String INTENT_EXTRA_TITLE = "title";
     private static String INTENT_EXTRA_PAGE_NUMBER = "page_number";
 

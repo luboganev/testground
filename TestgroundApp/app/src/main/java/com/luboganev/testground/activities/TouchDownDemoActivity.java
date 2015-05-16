@@ -2,6 +2,7 @@ package com.luboganev.testground.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
@@ -15,7 +16,7 @@ import com.luboganev.testground.views.TouchDownWrapper;
 /**
  * Created by luboganev on 11/10/14.
  */
-public class TouchDownDemoActivity extends Activity {
+public class TouchDownDemoActivity extends AppCompatActivity {
     private TouchDownWrapper mTouchDownWrapper;
     private Button mWrappedButton;
     private CheckBox mStealTouch;

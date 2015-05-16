@@ -2,6 +2,7 @@ package com.luboganev.testground.activities;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Toast;
 
@@ -9,7 +10,7 @@ import com.luboganev.testground.LocalMessenger;
 import com.luboganev.testground.R;
 
 
-public class LocalBroadcastDemoActivity extends Activity implements LocalMessenger.OnReceiveBroadcastListener {
+public class LocalBroadcastDemoActivity extends AppCompatActivity implements LocalMessenger.OnReceiveBroadcastListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -3,6 +3,7 @@ package com.luboganev.testground.activities;
 import android.app.Activity;
 import android.content.res.TypedArray;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
@@ -16,7 +17,7 @@ import android.widget.TextView;
 import com.luboganev.testground.R;
 import com.luboganev.testground.Utils;
 
-public class ImageScaleDemoActivity extends Activity {
+public class ImageScaleDemoActivity extends AppCompatActivity {
 
     private ImageView ivContainer;
     private Spinner spImageSource;
