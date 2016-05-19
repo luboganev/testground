@@ -38,6 +38,17 @@
             android:name=".activities.TouchDownDemoActivity"
             android:label="@string/title_activity_touchdown_demo" >
         </activity>
+        <activity android:name=".activities.PendingAlarmsDemoActivity"
+            android:label="@string/title_activity_pendingalarms_demo">
+        </activity>
+        <receiver
+            android:name=".activities.PendingAlarmsDemoActivity$MessageBroadcastReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="${applicationId}.DISPLAY_MESSAGE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
     </application>
 
 </manifest>

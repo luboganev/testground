@@ -1,6 +1,5 @@
 package com.luboganev.testground.activities;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -53,6 +52,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, TouchDownDemoActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_demoPendinAlarms).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, PendingAlarmsDemoActivity.class));
             }
         });
     }

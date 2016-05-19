@@ -148,6 +148,26 @@
                     android:tag="http://luboganev.github.io/blog/touch-wrapper" />
             </TableRow>
 
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btn_demoPendinAlarms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:text="@string/main_button_pendingalarmsdemo" />
+
+                <!--TODO add when blogpost is ready -->
+                <!--<ImageButton-->
+                    <!--android:layout_width="48dp"-->
+                    <!--android:layout_height="48dp"-->
+                    <!--android:layout_gravity="center_vertical"-->
+                    <!--android:background="?android:selectableItemBackground"-->
+                    <!--android:onClick="openRelatedPost"-->
+                    <!--android:src="@drawable/ic_action_open_post"-->
+                    <!--android:tag="http://luboganev.github.io/blog/touch-wrapper" />-->
+            </TableRow>
+
         </TableLayout>
 
 
