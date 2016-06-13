@@ -2,13 +2,13 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    buildToolsVersion "23.0.3"
 
     defaultConfig {
         applicationId "com.luboganev.testground"
         minSdkVersion 16
         targetSdkVersion 23
-        versionCode 5
+        versionCode 6
         versionName "1.0"
     }
     buildTypes {
