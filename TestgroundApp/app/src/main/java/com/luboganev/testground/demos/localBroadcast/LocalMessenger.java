@@ -1,4 +1,4 @@
-package com.luboganev.testground;
+package com.luboganev.testground.demos.localBroadcast;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

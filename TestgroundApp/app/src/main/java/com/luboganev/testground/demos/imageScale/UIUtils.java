@@ -1,9 +1,9 @@
-package com.luboganev.testground;
+package com.luboganev.testground.demos.imageScale;
 
 import android.content.Context;
 import android.util.TypedValue;
 
-public class Utils {
+public class UIUtils {
 
     /**
      * Returns the physical pixels that

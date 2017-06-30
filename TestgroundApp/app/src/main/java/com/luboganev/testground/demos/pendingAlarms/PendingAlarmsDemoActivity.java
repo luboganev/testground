@@ -1,4 +1,4 @@
-package com.luboganev.testground.activities;
+package com.luboganev.testground.demos.pendingAlarms;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;

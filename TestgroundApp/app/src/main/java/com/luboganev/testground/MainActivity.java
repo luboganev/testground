@@ -1,4 +1,4 @@
-package com.luboganev.testground.activities;
+package com.luboganev.testground;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -6,7 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.luboganev.testground.R;
+import com.luboganev.testground.demos.headlessFragment.HeadlessFragmentDemoActivity;
+import com.luboganev.testground.demos.imageScale.ImageScaleDemoActivity;
+import com.luboganev.testground.demos.intentBuilder.IntentBuilderDemoActivity;
+import com.luboganev.testground.demos.localBroadcast.LocalBroadcastDemoActivity;
+import com.luboganev.testground.demos.pendingAlarms.PendingAlarmsDemoActivity;
+import com.luboganev.testground.demos.touchDown.TouchDownDemoActivity;
 
 
 public class MainActivity extends AppCompatActivity {

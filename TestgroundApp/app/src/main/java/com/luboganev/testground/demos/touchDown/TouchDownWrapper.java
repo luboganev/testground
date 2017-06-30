@@ -1,4 +1,4 @@
-package com.luboganev.testground.views;
+package com.luboganev.testground.demos.touchDown;
 
 import android.content.Context;
 import android.util.AttributeSet;

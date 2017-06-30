@@ -1,6 +1,5 @@
-package com.luboganev.testground.activities;
+package com.luboganev.testground.demos.intentBuilder;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;

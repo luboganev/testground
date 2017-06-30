@@ -9,7 +9,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name=".activities.MainActivity"
+            android:name=".MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -18,31 +18,31 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.HeadlessFragmentDemoActivity"
+            android:name=".demos.headlessFragment.HeadlessFragmentDemoActivity"
             android:label="@string/title_activity_headlessfragment" >
         </activity>
         <activity
-            android:name=".activities.LocalBroadcastDemoActivity"
+            android:name=".demos.localBroadcast.LocalBroadcastDemoActivity"
             android:label="@string/title_activity_localbroadcast" >
         </activity>
         <activity
-            android:name=".activities.IntentBuilderDemoActivity"
+            android:name=".demos.intentBuilder.IntentBuilderDemoActivity"
             android:label="@string/title_activity_intentbuilder" >
         </activity>
         <activity
-            android:name=".activities.ImageScaleDemoActivity"
+            android:name=".demos.imageScale.ImageScaleDemoActivity"
             android:label="@string/title_activity_image_scale_demo"
             android:theme="@style/AppTheme.NoActionBar">
         </activity>
         <activity
-            android:name=".activities.TouchDownDemoActivity"
+            android:name=".demos.touchDown.TouchDownDemoActivity"
             android:label="@string/title_activity_touchdown_demo" >
         </activity>
-        <activity android:name=".activities.PendingAlarmsDemoActivity"
+        <activity android:name=".demos.pendingAlarms.PendingAlarmsDemoActivity"
             android:label="@string/title_activity_pendingalarms_demo">
         </activity>
         <receiver
-            android:name=".activities.PendingAlarmsDemoActivity$MessageBroadcastReceiver"
+            android:name=".demos.pendingAlarms.PendingAlarmsDemoActivity$MessageBroadcastReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="${applicationId}.DISPLAY_MESSAGE" />

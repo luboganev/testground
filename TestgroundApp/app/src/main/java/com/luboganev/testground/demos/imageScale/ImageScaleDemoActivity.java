@@ -1,6 +1,5 @@
-package com.luboganev.testground.activities;
+package com.luboganev.testground.demos.imageScale;
 
-import android.app.Activity;
 import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +14,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.luboganev.testground.R;
-import com.luboganev.testground.Utils;
 
 public class ImageScaleDemoActivity extends AppCompatActivity {
 
@@ -117,7 +115,7 @@ public class ImageScaleDemoActivity extends AppCompatActivity {
             ivContainer.getLayoutParams().height = ViewGroup.LayoutParams.WRAP_CONTENT;
             tvContainerHeightLabel.setText("Container height:");
         } else {
-            ivContainer.getLayoutParams().height = Utils.getPixelsFromDips(getApplicationContext(), sbContainerHeight.getProgress());
+            ivContainer.getLayoutParams().height = UIUtils.getPixelsFromDips(getApplicationContext(), sbContainerHeight.getProgress());
             tvContainerHeightLabel.setText("Container height:" + sbContainerHeight.getProgress());
         }
 
@@ -125,7 +123,7 @@ public class ImageScaleDemoActivity extends AppCompatActivity {
             ivContainer.getLayoutParams().width = ViewGroup.LayoutParams.WRAP_CONTENT;
             tvContainerWidthLabel.setText("Container width:");
         } else {
-            ivContainer.getLayoutParams().width = Utils.getPixelsFromDips(getApplicationContext(), sbContainerWidth.getProgress());
+            ivContainer.getLayoutParams().width = UIUtils.getPixelsFromDips(getApplicationContext(), sbContainerWidth.getProgress());
             tvContainerWidthLabel.setText("Container width:" + sbContainerWidth.getProgress());
         }
         ivContainer.requestLayout();
