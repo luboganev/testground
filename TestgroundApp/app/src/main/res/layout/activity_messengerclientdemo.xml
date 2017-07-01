@@ -54,7 +54,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/activity_vertical_margin"
-            android:text="Send"
+            android:text="Send message"
+            />
+
+        <Button
+            android:id="@+id/sendTwoIntegers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="Send request sum two integers"
             />
     </LinearLayout>
 </ScrollView>
