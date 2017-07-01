@@ -41,6 +41,9 @@
         <activity android:name=".demos.pendingAlarms.PendingAlarmsDemoActivity"
             android:label="@string/title_activity_pendingalarms_demo">
         </activity>
+        <activity android:name=".demos.ipcMessenger.client.MessengerClientDemoActivity"
+                  android:label="@string/title_activity_ipcmessenger_demo">
+        </activity>
         <receiver
             android:name=".demos.pendingAlarms.PendingAlarmsDemoActivity$MessageBroadcastReceiver"
             android:exported="true">
@@ -49,6 +52,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </receiver>
+        <service
+            android:name=".demos.ipcMessenger.service.MessengerService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
     </application>
 
 </manifest>

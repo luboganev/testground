@@ -9,12 +9,14 @@
     <string name="title_activity_image_scale_demo">ImageView ScaleType demo</string>
     <string name="title_activity_touchdown_demo">Touch wrapper demo</string>
     <string name="title_activity_pendingalarms_demo">Intents and Alarms demo</string>
+    <string name="title_activity_ipcmessenger_demo">IPC Messenger</string>
     <string name="main_button_intent_builder">Intent Builder</string>
     <string name="main_button_broadcastdemo">Local broadcast</string>
     <string name="main_button_headlessfragmentdemo">Headless fragment</string>
     <string name="main_button_imagescaledemo">ImageView ScaleType</string>
     <string name="main_button_touchdowndemo">Touch wrapper demo</string>
     <string name="main_button_pendingalarmsdemo">Intents and Alarms demo</string>
+    <string name="main_button_ipcmessenger">IPC Messenger</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 

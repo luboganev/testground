@@ -9,6 +9,7 @@ import android.view.View;
 import com.luboganev.testground.demos.headlessFragment.HeadlessFragmentDemoActivity;
 import com.luboganev.testground.demos.imageScale.ImageScaleDemoActivity;
 import com.luboganev.testground.demos.intentBuilder.IntentBuilderDemoActivity;
+import com.luboganev.testground.demos.ipcMessenger.client.MessengerClientDemoActivity;
 import com.luboganev.testground.demos.localBroadcast.LocalBroadcastDemoActivity;
 import com.luboganev.testground.demos.pendingAlarms.PendingAlarmsDemoActivity;
 import com.luboganev.testground.demos.touchDown.TouchDownDemoActivity;
@@ -64,6 +65,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, PendingAlarmsDemoActivity.class));
+            }
+        });
+
+        findViewById(R.id.btn_demoIPCMessenger).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, MessengerClientDemoActivity.class));
             }
         });
     }
