@@ -15,21 +15,26 @@ class MessengerService : Service() {
 
         override fun handleMessage(msg: Message?) {
             when(msg?.what) {
+
                 MessengerContract.WHAT_SAY_HELLO -> {
-                    val incomingMessage = MessengerContract.SayHello.parseSayHelloMessageData(msg.data)
+                    val incomingMessage = MessengerContract.SayHello.parseRequestMessagePayload(msg.data)
                     Sandwich.serve(applicationContext, "Client says hello", incomingMessage)
                 }
-                MessengerContract.WHAT_ADD_TWO_NUMBERS -> {
-                    val incomingRequest = MessengerContract.AddTwoIntegers.parseRequestMessageData(msg.data)
-                    if (incomingRequest != null) {
-                        Sandwich.serve(applicationContext, "Client sends two integers",
-                            "Adding ${incomingRequest?.first} and ${incomingRequest?.second}")
 
-                        val resultMessage = MessengerContract.AddTwoIntegers.generateResponseMessage(incomingRequest.first + incomingRequest.second)
+                MessengerContract.WHAT_ADD_TWO_NUMBERS -> {
+                    try {
+                        val twoIntegersContainer = MessengerContract.AddTwoIntegers.parseRequestMessagePayload(msg.data)
+
+                        Sandwich.serve(applicationContext, "Client sends two integers",
+                                "Adding ${twoIntegersContainer.first} and ${twoIntegersContainer.second}")
+
+                        val resultMessage = MessengerContract.AddTwoIntegers.buildResponseMessage(
+                                twoIntegersContainer.first + twoIntegersContainer.second)
+
                         msg.replyTo.send(resultMessage)
-                    } else {
-                        Sandwich.serve(applicationContext, "Error",
-                                "Payload corrupted. TwoIntegersContainer expected")
+
+                    } catch (e: MessengerContract.InvalidPayloadException) {
+                        Sandwich.serve(applicationContext, "Error", e.message)
                     }
                 }
                 else -> {

@@ -51,7 +51,7 @@ class MessengerClientDemoActivity: AppCompatActivity() {
 
     private fun bindToService() {
         if (!boundToService) {
-            bindService(MessengerContract.messengerServiceBindIntent, messengerServiceConnection, BIND_AUTO_CREATE)
+            bindService(MessengerContract.serviceBindIntent, messengerServiceConnection, BIND_AUTO_CREATE)
         }
     }
 
@@ -79,7 +79,7 @@ class MessengerClientDemoActivity: AppCompatActivity() {
 
     private fun sendHelloMessage(messageText: String) {
         if (boundToService) {
-            val oneWayMessage = MessengerContract.SayHello.generateMessage(messageText)
+            val oneWayMessage = MessengerContract.SayHello.buildRequestMessage(messageText)
             serviceCallsMessenger?.send(oneWayMessage)
         }
     }
@@ -87,7 +87,7 @@ class MessengerClientDemoActivity: AppCompatActivity() {
     private fun sendAddTwoIntegersMessage() {
         if (boundToService) {
             val payload = TwoIntegersContainer(1300, 37)
-            val requestResponseMessage = MessengerContract.AddTwoIntegers.generateRequestMessage(payload, callbackMessenger)
+            val requestResponseMessage = MessengerContract.AddTwoIntegers.buildRequestMessage(payload, callbackMessenger)
             serviceCallsMessenger?.send(requestResponseMessage)
         }
     }
@@ -98,7 +98,7 @@ class MessengerClientDemoActivity: AppCompatActivity() {
         override fun handleMessage(msg: Message?) {
             when(msg?.what) {
                 MessengerContract.WHAT_ADD_TWO_NUMBERS_RESULT -> {
-                    val result = MessengerContract.AddTwoIntegers.parseResponseMessageData(msg.data)
+                    val result = MessengerContract.AddTwoIntegers.parseResponseMessagePayload(msg.data)
                     Toast.makeText(applicationContext, "Got result of integer addition from service:  $result", Toast.LENGTH_LONG).show()
                 }
                 else -> {
